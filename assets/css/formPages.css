@@ -1,0 +1,45 @@
+body, html {
+  overflow: hidden; }
+
+main {
+  width: 100%;
+  height: calc(100vh - var(--nav-height));
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main > div {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+    margin: 0 auto; }
+    main > div h2 {
+      text-align: center;
+      margin: 0 0 1rem;
+      font-size: 2rem; }
+    main > div form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem; }
+      main > div form label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        width: 100%; }
+        main > div form label input, main > div form label textarea {
+          width: 100%;
+          padding: 0.5rem;
+          box-sizing: border-box;
+          border: none;
+          border-bottom: 1px solid var(--color-primary);
+          font-size: 1rem;
+          font-weight: 500;
+          background-color: rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(10px);
+          transition: all 0.2s ease-in-out; }
+          main > div form label input:focus, main > div form label textarea:focus {
+            background-color: rgba(255, 255, 255, 0.8); }
+
+/*# sourceMappingURL=formPages.css.map */
